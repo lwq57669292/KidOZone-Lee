@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_pic">
+
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/back_button_pic" />
+
+
+    <ImageView
+        android:id="@+id/imageFood1"
+        android:layout_width="58dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/imagelucnchBox"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageFood2"
+        android:layout_width="58dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/imageFood1"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/imagelucnchBox"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageFood3"
+        android:layout_width="58dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/imageFood2"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/imagelucnchBox"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageFood4"
+        android:layout_width="58dp"
+        android:layout_height="61dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="350dp"
+        android:layout_toRightOf="@+id/imagelucnchBox"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageFood5"
+        android:layout_width="58dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/imageFood4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/imagelucnchBox"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageFood6"
+        android:layout_width="58dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/imageFood5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/imagelucnchBox"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imagelucnchBox"
+        android:layout_width="237dp"
+        android:layout_height="202dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/lunchresult" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="More category and less junk food!"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="44dp" />
+
+
+    <TextView
+        android:id="@+id/textResultExplain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text=""
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

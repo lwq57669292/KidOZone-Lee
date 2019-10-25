@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activityService.LunchBoxSelectActivity"
+    android:background="@drawable/background_pic">
+
+    <ImageView
+        android:id="@+id/tv_lb_select_title"
+        android:layout_height="150dp"
+        android:layout_width="375dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/lunchbox_select_title_pic"/>
+
+    <ImageView
+        android:id="@+id/iv_lb_select_foodType"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_lb_select_title"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:id="@+id/btn_lb_select_food1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/iv_lb_select_foodType"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
+
+    <Button
+        android:id="@+id/btn_lb_select_food2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/btn_lb_select_food1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
+
+    <Button
+        android:id="@+id/btn_lb_select_food3"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/btn_lb_select_food2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
+
+    <Button
+        android:id="@+id/btn_lb_select_food_cross"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/btn_lb_select_food3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/lunchbox_select_cross_btn_pic"/>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/back_button_pic" />
+
+</RelativeLayout>

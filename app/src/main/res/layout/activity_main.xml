@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_page_background"
+    tools:context=".activityService.MainActivity">
+
+    <ImageView
+        android:id="@+id/mainPageTitle"
+        android:layout_height="150dp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/main_page_title" />
+
+    <Button
+        android:id="@+id/btn_main_mute"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/aboutUsButton"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_main_mute"/>
+
+    <Button
+        android:id="@+id/imagePuzzleGame"
+        android:layout_width="300dp"
+        android:layout_height="225dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/main_page_puzzle_btn" />
+
+
+    <Button
+        android:id="@+id/imageLunchGame"
+        android:layout_width="300dp"
+        android:layout_height="225dp"
+        android:layout_below="@+id/imagePuzzleGame"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/main_page_lunchbox_btn"/>
+
+    <Button
+        android:id="@+id/imageWasteGame"
+        android:layout_width="300dp"
+        android:layout_height="225dp"
+        android:layout_below="@+id/imageLunchGame"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/main_page_waste_btn"/>
+
+    <Button
+        android:id="@+id/aboutUsButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/info_button" />
+
+
+</RelativeLayout>

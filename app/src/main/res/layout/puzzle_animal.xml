@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_pic">
+
+    <ImageView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:background="@drawable/puzzle_animal_title"
+        android:layout_centerHorizontal="true" />
+
+
+    <com.hellofit.kidozone.puzzleGame.ui.PuzzleLayout
+        android:id="@+id/puzzleLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description"
+        android:layout_marginTop="-3dp" />
+
+    <ImageView
+        android:id="@+id/ivSrcImg"
+        android:layout_width="120dp"
+        android:layout_height="135dp"
+        android:onClick="changeImage"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/puzzleLayout"
+        android:layout_marginTop="3dp" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ivSrcImg"
+        android:layout_centerInParent="true"
+        android:background="@drawable/icon_click_select"/>
+
+    <TextView
+        android:id="@+id/tvLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:textFontWeight="40"
+        android:text="placeholder"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnAddLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/puzzleLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/ivSrcImg"
+        android:onClick="addLevel"
+        android:textAllCaps="false"
+        android:background="@drawable/puzzle_level_up_btn_pic" />
+
+    <Button
+        android:id="@+id/btnReduceLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/puzzleLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="1dp"
+        android:layout_toLeftOf="@+id/ivSrcImg"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="reduceLevel"
+        android:background="@drawable/puzzle_level_down_btn_pic"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/back_button_pic"/>
+
+
+
+</RelativeLayout>

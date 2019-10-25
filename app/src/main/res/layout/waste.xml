@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_pic">
+
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/back_button_pic" />
+
+    <ImageView
+        android:id="@+id/rubbish"
+        android:layout_width="120dp"
+        android:layout_height="190dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/animation_green_bin"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:id="@+id/imageDes"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/waste_title" />
+
+    <TextView
+        android:id="@+id/rubbishName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/rubbish"
+        android:layout_marginBottom="5dp"
+        android:text="TextView"
+        android:textAllCaps="false"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/wasteScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rubbish"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="#F10412"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/iv_waste_score"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/wasteScore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view4"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/rubbish"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/swipe"
+        app:lottie_repeatCount="1" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_yellow_bin"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/animation_green_bin"
+        android:layout_marginTop="70dp"
+        android:layout_toRightOf="@+id/rubbish"
+        app:lottie_autoPlay="true"
+        app:lottie_colorFilter="#E8CE14"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/bin_trash" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_red_bin"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/animation_green_bin"
+        android:layout_marginTop="70dp"
+        android:layout_toLeftOf="@+id/rubbish"
+        app:lottie_autoPlay="true"
+        app:lottie_colorFilter="#E91B17"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/bin_trash" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_green_bin"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:layout_below="@id/imageDes"
+        app:lottie_autoPlay="true"
+        app:lottie_colorFilter="#15ED29"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/bin_trash" />
+
+    <ImageView
+        android:id="@+id/iv_waste_end"
+        android:layout_width="600dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageDes"
+        android:layout_marginTop="45dp" />
+
+</RelativeLayout>

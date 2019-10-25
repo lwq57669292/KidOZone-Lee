@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_home"
+    tools:context=".activityService.AboutUsActivity">
+
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/back_button_pic" />
+
+    <Button
+        android:id="@+id/btn_main_mute"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_main_mute"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="200dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title_about_us"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/title_about_us"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/tv_intro_product"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title_about_us"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/info_about_us"
+                android:textAllCaps="false"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
